@@ -52,14 +52,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapClick(@NonNull LatLng latLng) {
 
         Mapa.addMarker(new MarkerOptions().position(latLng)
-                .title("Parilla Juan Diego")
-                .snippet("san camilo José joaquin de olmedo y, Argentina, Quevedo")
+                .title("")
+                .snippet("")
 
         );
 
         CircleOptions circulo = new CircleOptions();
         circulo.center(latLng);
-        circulo.radius(100);
+        circulo.radius(1500);
         Mapa.addCircle(circulo);
     }
 }
+
